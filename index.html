@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8"/></head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Draw app</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Draw!</h1>
+
+        <canvas id="tela" width="1000" height="600"></canvas>
+
+        <div class="container">
+            <div class="colorArea">
+                <div data-color="rgb(15, 15, 15)" style="background-color: rgb(15, 15, 15)" class="color actived"></div>
+                <div data-color="rgb(182, 83, 83)" style="background-color: rgb(182, 83, 83)" class="color"></div>
+                <div data-color="#838abe" style="background-color: #838abe" class="color"></div>
+                <div data-color="rgb(115, 165, 126)" style="background-color: rgb(115, 165, 126)" class="color"></div>
+                <div data-color="#ddb875" style="background-color: #ddb875" class="color"></div>
+                <div data-color="white" style="background-color: white" class="color"></div>
+            </div>
+
+            <div class="slider">
+                <input type="range" min="1" max="20" value="4" step="1" class="range">
+            </div>
+        </div>
+
+        <button class="clear">Limpar quadro</button>
+
+        <!--<script src="https://kit.fontawesome.com/62d329ae37.js" crossorigin="anonymous"></script>-->
+        <script src="index.js"></script>
+    </body>
+</html>
